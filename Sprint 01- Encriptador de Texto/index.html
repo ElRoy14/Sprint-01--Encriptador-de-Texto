@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="barra">
+                <img src="assets/logo.png" class="logo">
+                <section class="titulo">
+                    <h1>ENCRIPTER</h1>
+                    <legend>Encriptador de texto</legend>
+                </section>
+                <div name="copy-msg" class="copy-msg" id="copy-msg"><img  class="verify-icon"src="assets/marca-de-verificacion.png">Texto Copiado</div>
+            </div>
+        </header>
+        <main>
+            <form onsubmit="return false">
+                <div class="form-wrapper">
+                    <section class="entrada">
+                        <textarea type="text" class="entrada-txt" id="entrada-txt" placeholder="Enter text..." ></textarea> <br>
+                        <div class="control-buttons">
+                            <button class="control-enc" id="btn-enc"><p class="enc-text">Encriptar</p><img class="encriptar-icon" src="assets/datos-encriptados.png"></button>
+                            <button class="control-desenc" id="btn-desenc"><p class="desenc-text">Desencriptar</p><img class="desencriptar-icon" src="assets/desbloquear.png"></button>
+                        </div>
+                    </section>
+                    <section class="salida">
+                        <div type="text" class="salida-txt" id="salida-txt" readonly>
+                                <div class="adv">
+                                    <p class="p-top">Lo sentimos</p>
+                                    <img class="img-salida" src="assets/contrasena.png">
+                                    <p class="p-bottom">No encontramos su texto</p>
+                                </div>
+                        </div>
+                        <button class="btn-copiar" id="btn-copiar"><img src="assets/copiar.png" class="copiar-icon"></button>
+                    </section>
+                </div>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
