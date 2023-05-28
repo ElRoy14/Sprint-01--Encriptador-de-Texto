@@ -96,7 +96,7 @@
         document.body.removeChild(aux);
     });
 
-    function prompt(){
+    function verificacion(){
         let div = document.getElementById("copy-msg");
         div.classList.add("visible");
         setTimeout( () => {
@@ -105,4 +105,4 @@
         console.log(div);
     }
 
-    copy.onclick = prompt;
+    copy.onclick = verificacion;
